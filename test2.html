@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+
+<head>
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="Campus Cursos - Educación & Cursos " />
+<meta name="keywords" content="keyword1,keyword2,keyword3,keyword4,keyword5" />
+<meta name="author" content="ThemeMascot" />
+
+<!-- Page Title -->
+<title> Cursos </title>
+
+<!-- Favicon and Touch Icons -->
+<link href="/images/ingles_amateur/Favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+
+<!-- Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="css/jquery-ui.min.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/css-plugin-collections.css" rel="stylesheet"/>
+<!-- CSS | menuzord megamenu skins -->
+<link href="css/menuzord-megamenu.css" rel="stylesheet"/>
+<link id="menuzord-menu-skins" href="css/menuzord-skins/menuzord-boxed.css" rel="stylesheet"/>
+<!-- CSS | Main style file -->
+<link href="css/style-main.css" rel="stylesheet" type="text/css">
+<!-- CSS | Preloader Styles -->
+<link href="css/preloader.css" rel="stylesheet" type="text/css">
+<!-- CSS | Custom Margin Padding Collection -->
+<link href="css/custom-bootstrap-margin-padding.css" rel="stylesheet" type="text/css">
+<!-- CSS | Responsive media queries -->
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+<!-- Revolution Slider 5.x CSS settings -->
+<link  href="js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
+<link  href="js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
+<link  href="js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css"/>
+
+<!-- CSS | Theme Color -->
+<link href="css/colors/theme-skin-color-set2.css" rel="stylesheet" type="text/css">
+<!--fontawesome-->
+<script src="https://kit.fontawesome.com/6e0efc49f0.js" crossorigin="anonymous"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<style>
+    :root {
+  --black: #3a3a3a;
+  --white: #fff;
+  --green: #49b293;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 50px 0;
+  color: var(--black);
+  font: 1rem/1.3 sans-serif;
+}
+
+.author-archive {
+  padding: 1.5rem;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+} */
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h1 a {
+  transition: all 0.1s;
+}
+
+h1 a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* FILTERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.filters * {
+  display: inline-block;
+}
+
+.filters label {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.25rem;
+  border-radius: 2rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.filters label:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+
+/* FILTERED ELEMENTS (POSTS)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.posts {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.posts .post {
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.posts .post-title {
+  font-size: 1.3rem;
+}
+
+.posts .post-title:hover {
+  text-decoration: underline;
+}
+
+.posts figcaption {
+  padding: 1rem;
+}
+
+.posts .post-categories {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+
+.posts .post-categories * {
+  display: inline-block;
+}
+
+.posts .post-categories li {
+  margin-bottom: 0.2rem;
+}
+
+.posts .post-categories a {
+  padding: 0.2rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid;
+  line-height: normal;
+  transition: all 0.1s;
+}
+
+.posts .post-categories a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+
+/* FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="All"]:checked ~ .filters [for="All"],
+[value="CSS"]:checked ~ .filters [for="CSS"],
+[value="JavaScript"]:checked ~ .filters [for="JavaScript"],
+[value="jQuery"]:checked ~ .filters [for="jQuery"],
+[value="WordPress"]:checked ~ .filters [for="WordPress"],
+[value="Slider"]:checked ~ .filters [for="Slider"],
+[value="fullPage.js"]:checked ~ .filters [for="fullPage.js"] {
+  background: var(--green);
+  color: var(--white);
+}
+
+[value="All"]:checked ~ .posts [data-category] {
+  display: block;
+}
+
+[value="CSS"]:checked ~ .posts .post:not([data-category~="CSS"]),
+[value="JavaScript"]:checked ~ .posts .post:not([data-category~="JavaScript"]),
+[value="jQuery"]:checked ~ .posts .post:not([data-category~="jQuery"]),
+[value="WordPress"]:checked ~ .posts .post:not([data-category~="WordPress"]),
+[value="Slider"]:checked ~ .posts .post:not([data-category~="Slider"]),
+[value="fullPage.js"]:checked ~ .posts .post:not([data-category~="fullPage.js"]) {
+  display: none;
+}
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  font-size: 1rem;
+  padding: 0 1.5rem;
+  text-align: right;
+}
+
+footer span {
+  color: #e31b23;
+}
+
+
+/* MQ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 900px) {
+  .posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 14px;
+  }
+
+  .posts {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  </style>
+</head>
+<body class="">
+<div id="wrapper" class="clearfix">
+  
+  <!-- Header -->
+  <header id="header" class="header modern-header modern-header-theme-colored">
+    <div class="header-top bg-theme-colored2 sm-text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="widget text-white">
+              <!-- <i class="fa fa-clock-o text-white"></i> Opening Hours:  Mon - Tues : 6.00 am - 10.00 pm, Sunday Closed -->
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget pull-right flip sm-pull-none">
+              <ul class="nav navbar-nav list-bordered language-switcher">
+                <!-- <li class="dropdown">
+                  <a href="#" class="dropdown-toggle text-theme-colored" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="images/flags/en.png" alt="En"> ENG <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#"><img src="images/flags/fr.png" alt="En"> France</a></li>
+                    <li><a href="#"><img src="images/flags/de.png" alt="En"> German</a></li>
+                    <li><a href="#"><img src="images/flags/it.png" alt="En"> Italy</a></li>
+                  </ul>
+                </li> -->
+              </ul>
+            </div>
+            <div class="widget">
+              <ul class="list-inline  text-right flip sm-text-center">
+                <!-- <li class="m-0 pl-10"> <a href="ajax-load/login-form.html" class="text-white ajaxload-popup"><i class="fa fa-user-o mr-5 text-white"></i> Login /</a> </li>
+                <li class="m-0 pl-0 pr-10"> 
+                  <a href="ajax-load/register-form.html" class="text-white ajaxload-popup"><i class="fa fa-edit mr-5 text-white"></i>Register</a> 
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-middle p-0 bg-light xs-text-center">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="widget sm-text-center">
+              <i class="fa fa-envelope text-theme-colored font-32 mt-5 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
+              <a href="#" class="font-12 text-gray text-uppercase">ENVÍENOS UN CORREO HOY</a>
+              <h5 class="font-13 text-black m-0"><a href="mailto:campuscursos1@gmail.com">campuscursos1@gmail.com</a></h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-6">
+            <div class="widget text-center">
+              <a class="" href="index.html"><img src="/images/ingles_amateur/BigCommerce Store Logo.png" alt="logo head"></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3">
+            <div class="widget sm-text-center">
+              <i class="fa fa-phone-square text-theme-colored font-32 mt-5 mr-sm-0 sm-display-block pull-left flip sm-pull-none"></i>
+              <a href="#" class="font-12 text-gray text-uppercase">LLÁMANOS PARA MÁS DETALLES</a>
+              <h5 class="font-13 text-black m-0"> +(504) 9852-0210</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed">
+        <div class="container">
+          <nav id="menuzord" class="menuzord yellow">
+            <ul class="menuzord-menu onepage-nav">
+              <li><a href="/index.html#home">Home</a></li>
+              <li><a href="/index.html#about">Nosotros</a></li>
+              <li class="active"><a href="/index.html#courses">Cursos</a></li>
+              <li><a href="/index.html#team">Instructores</a></li>
+              <li><a href="/index.html#events">Eventos</a></li>
+              <li><a href="/index.html#gallery">Galleria</a></li>
+              <li><a href="/index.html#blog">Blog</a></li>
+            </ul>
+            <ul class="pull-right sm-pull-nonelist-inline nav-side-icon-list">
+              <!-- <li>
+                <a href="#fullscreen-search-form" id="fullscreen-search-btn"><i class="search-icon text-theme-colored2 fa fa-search"></i></a>
+                <div id="fullscreen-search-form">
+                  <button type="button" class="close">×</button>
+                  <form>
+                    <input type="search" value="" placeholder="Search keywords(s)" />
+                    <button type="submit"><i class="search-icon fa fa-search"></i></button>
+                  </form>
+                </div>
+              </li> -->
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Start main-content -->
+  <div class="main-content">
+
+    <!-- Section: home -->
+    <section id="courses" class="divider">
+      <div class="container-fluid p-0">
+        <section class="inner-header divider layer-overlay overlay-theme-colored-7" data-bg-img="images/bg/bg1.jpg">
+            <div class="container pt-120 pb-60">
+              <!-- Section Content -->
+              <div class="section-content">
+                <div class="row"> 
+                  <div class="col-md-6">
+                    <h2 class="text-white font-36">Cursos</h2>
+                    <!-- <ol class="breadcrumb text-left mt-10 white">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li class="active">Courses</li>
+                    </ol> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+       
+      </div>
+    </section>
+
+    <!-- Section: info-boxes -->
+    <section class="">
+      <div class="container pt-0 pt-sm-30">
+        <div class="section-content">
+          <div class="row equal-height-inner home-boxes">
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay1">
+              <div class="sm-height-auto bg-theme-colored">
+                <div class="text-center pt-30 pb-30">
+                  <i class="fa fa-user text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="#" class="text-white">Servicio 24 Horas</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay2">
+              <div class="sm-height-auto bg-theme-colored2-darker2">
+                <div class="text-center pt-30 pb-30">
+                  <i class="fa fa-comments-o text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="#" class="text-white">Ayuda en linea</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay3">
+              <div class="sm-height-auto bg-theme-colored-darker3">
+                <div class="text-center pt-30 pb-30">
+                  <i class="fa fa-cc-paypal text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="#" class="text-white">Pago en línea</a></h4>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-3 pl-0 pl-sm-15 pr-0 pr-sm-15 sm-height-auto mt-sm-0 wow fadeInLeft animation-delay4">
+              <div class="sm-height-auto bg-theme-colored2-darker4">
+                <div class="text-center pt-30 pb-30">
+                  <i class="fa fa-mobile text-white font-64"></i>
+                  <h4 class="text-uppercase mt-20"><a href="#" class="text-white">Llamar (504) 9852-0210</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Courses -->
+    <section id="courses" class="bg-silver-light">
+        <div class="container">
+            <section class="author-archive">
+                <div class="container">
+                  <h1>Nuestros Cursos</h1>
+                  <input type="radio" id="All" name="categories" value="All" checked>
+                  <input type="radio" id="CSS" name="categories" value="CSS">
+                  <input type="radio" id="JavaScript" name="categories" value="JavaScript">
+                  <input type="radio" id="jQuery" name="categories" value="jQuery">
+                  <input type="radio" id="WordPress" name="categories" value="WordPress">
+                  <input type="radio" id="Slider" name="categories" value="Slider">
+                  <input type="radio" id="fullPage.js" name="categories" value="fullPage.js">
+              
+                  <ol class="filters">
+                    <li>
+                      <label for="All">All</label>
+                    </li>
+                    <li>
+                      <label for="CSS">Idiomas</label>
+                    </li>
+                    <li>
+                      <label for="JavaScript">Decoración</label>
+                    </li>
+                    <li>
+                      <label for="jQuery">jQuery</label>
+                    </li>
+                    <li>
+                      <label for="WordPress">WordPress</label>
+                    </li>
+                    <li>
+                      <label for="Slider">Slider</label>
+                    </li>
+                    <li>
+                      <label for="fullPage.js">fullPage.js</label>
+                    </li>
+                  </ol>
+              
+                  <ol class="posts">
+                    <li class="post" data-category="CSS JavaScript">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-build-a-dead-simple-parallax-effect-with-css-javascript--cms-33061?_ga=2.146015156.1249101154.1555312171-2126893531.1553152868" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/parallax-pre.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">JavaScript</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-build-a-dead-simple-parallax-effect-with-css-javascript--cms-33061?_ga=2.146015156.1249101154.1555312171-2126893531.1553152868" target="_blank">Quick Tip: Create a Very Simple Parallax Effect With CSS & JavaScript
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="CSS JavaScript">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-portfolio-page-with-css-javascript--cms-32933?_ga=2.268974834.267848227.1555345574-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/chart-pre.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">JavaScript</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-portfolio-page-with-css-javascript--cms-32933?_ga=2.268974834.267848227.1555345574-242901505.1471790948" target="_blank">How to Build a Static Portfolio Page With CSS & JavaScript
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="JavaScript WordPress">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/dropdown-navigation-how-to-maintain-the-selected-option-on-page-load-on-a-wordpress-site--cms-32211?_ga=2.3551667.267848227.1555345574-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/pre-wp.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">JavaScript</a>
+                              </li>
+                              <li>
+                                <a href="">WordPress</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/dropdown-navigation-how-to-maintain-the-selected-option-on-page-load-on-a-wordpress-site--cms-32211?_ga=2.3551667.267848227.1555345574-242901505.1471790948" target="_blank">Dropdown Navigation: How to Maintain the Selected Option On WordPress
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="CSS JavaScript">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/dropdown-navigation-how-to-maintain-the-selected-option-on-page-load--cms-32210?_ga=2.192885033.267848227.1555345574-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/load-pre.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">JavaScript</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/dropdown-navigation-how-to-maintain-the-selected-option-on-page-load--cms-32210?_ga=2.192885033.267848227.1555345574-242901505.1471790948" target="_blank">Dropdown Navigation: How to Maintain the Selected Option on Page Load
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="CSS">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-enhance-a-page-with-css-animations--cms-32100?_ga=2.3551667.267848227.1555345574-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/animations-pre.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-enhance-a-page-with-css-animations--cms-32100?_ga=2.3551667.267848227.1555345574-242901505.1471790948" target="_blank">Enhance the Way a Web Page Loads With CSS Animations
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="CSS">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-full-screen-responsive-page-with-flexbox--cms-32086?_ga=2.225771033.267848227.1555345574-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/flex-pre.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-full-screen-responsive-page-with-flexbox--cms-32086?_ga=2.225771033.267848227.1555345574-242901505.1471790948" target="_blank">How to Build a Full-Screen Responsive Page With Flexbox</a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="fullPage.js">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/how-to-create-an-animated-spirit-day-presentation-with-fullpagejs--cms-32005?_ga=2.171060384.1249101154.1555312171-2126893531.1553152868" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/spirit-pre.jpg" alt="">       
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">fullPage.js</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/how-to-create-an-animated-spirit-day-presentation-with-fullpagejs--cms-32005?_ga=2.171060384.1249101154.1555312171-2126893531.1553152868" target="_blank">How to Create an Animated Spirit Day Presentation With fullPage.js
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="CSS JavaScript">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-manipulate-cursor-appearance-with-css--cms-31825?_ga=2.149104566.1249101154.1555312171-2126893531.1553152868" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/cursor-pre.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">JavaScript</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-manipulate-cursor-appearance-with-css--cms-31825?_ga=2.149104566.1249101154.1555312171-2126893531.1553152868" target="_blank">Quick Tip: How to Manipulate the Cursor Appearance With CSS
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="jQuery CSS Slider">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-full-screen-responsive-carousel-slider-with-owljs--cms-31771?_ga=2.214527703.1129106392.1555690352-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/pre-oo.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">jQuery</a>
+                              </li>
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">Slider</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-full-screen-responsive-carousel-slider-with-owljs--cms-31771?_ga=2.214527703.1129106392.1555690352-242901505.1471790948" target="_blank">How to Build a Full-Screen Responsive Carousel Slider With Owl.js
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="jQuery CSS Slider">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-an-attractive-responsive-image-gallery-with-slickjs--cms-31355?_ga=2.245039813.1129106392.1555690352-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/slick-pre.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">jQuery</a>
+                              </li>
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">Slider</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/how-to-build-an-attractive-responsive-image-gallery-with-slickjs--cms-31355?_ga=2.245039813.1129106392.1555690352-242901505.1471790948" target="_blank">How to Build an Attractive Responsive Image Gallery With slick.js
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="CSS JavaScript">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/a-simple-javascript-technique-for-filling-star-ratings--cms-29450?_ga=2.239800003.1129106392.1555690352-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/stars-pre.png" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">CSS</a>
+                              </li>
+                              <li>
+                                <a href="">JavaScript</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/a-simple-javascript-technique-for-filling-star-ratings--cms-29450?_ga=2.239800003.1129106392.1555690352-242901505.1471790948" target="_blank">A Simple JavaScript Technique for Filling Star Ratings
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                    <li class="post" data-category="jQuery fullPage.js">
+                      <article>
+                        <figure>
+                          <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-scroll-animations-with-fullpagejs-and-animatecss--cms-25235?_ga=2.245041733.1129106392.1555690352-242901505.1471790948" target="_blank">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/scroll-preview.jpg" alt="">
+                          </a>
+                          <figcaption>
+                            <ol class="post-categories">
+                              <li>
+                                <a href="">jQuery</a>
+                              </li>
+                              <li>
+                                <a href="">fullPage.js</a>
+                              </li>
+                            </ol>
+                            <h2 class="post-title">
+                              <a href="https://webdesign.tutsplus.com/tutorials/quick-tip-scroll-animations-with-fullpagejs-and-animatecss--cms-25235?_ga=2.245041733.1129106392.1555690352-242901505.1471790948" target="_blank">Quick Tip: Scroll Animations With fullPage.js and Animate.css
+                              </a>
+                            </h2>
+                          </figcaption>
+                        </figure>
+                      </article>
+                    </li>
+                  </ol>
+                </div>
+              </section>
+             
+          </div>
+    </section>
+
+    <!-- Divider: Funfact -->
+    <section class="divider parallax layer-overlay overlay-theme-colored-7" data-bg-img="images/bg/bg5.jpg" data-parallax-ratio="0.7">
+      <div class="container">
+        <div class="section-content text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="mt-0 mb-50 text-white">Siempre estamos por delante <br> Educación profesional para tu futuro.</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-smile mt-5 text-theme-colored2"></i>
+                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="5100" data-theme="minimal">0</div>
+              <h5 class="text-white text-uppercase mb-0">Clientes felices</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-note2 mt-5 text-theme-colored2"></i>
+                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="200" data-theme="minimal">0</div>
+              <h5 class="text-white text-uppercase mb-0">Cursos Aprobados</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-50">
+            <div class="funfact text-center">
+              <i class="pe-7s-users mt-5 text-theme-colored2"></i>
+                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="20" data-theme="minimal">0</div>
+              <h5 class="text-white text-uppercase mb-0">Instructores certificados</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3 mb-md-0">
+            <div class="funfact text-center">
+              <i class="pe-7s-cup mt-5 text-theme-colored2"></i>
+                <div class="odometer-animate-number text-white font-weight-600 font-48" data-value="600" data-theme="minimal">0</div>
+              <h5 class="text-white text-uppercase mb-0">Premios Ganados</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: team -->
+    <section id="team">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <h2 class="text-uppercase line-bottom-double-line-centered mt-0">Our <span class="text-theme-colored2">Teachers</span></h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem autem voluptatem obcaecati! <br>ipsum dolor sit Rem autem voluptatem obcaecati</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row mtli-row-clearfix">
+            <div class="owl-carousel-4col">
+              <div class="item">
+                <div class="team-members maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="" src="images/team/sm-1.jpg">
+                  </div>
+                  <div class="bg-lighter border-1px text-center p-10 pt-20 pb-10">
+                    <h3 class="mt-0"><a class="text-theme-colored2" href="page-teachers-details.html">Sakib Vettori</a></h3>
+                    <h5 class="text-theme-color">Teacher - MBA</h5>
+                  </div>
+                  <div class="bg-theme-colored text-center pt-5">
+                    <ul class="styled-icons">
+                      <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype text-white"></i></a></li>
+                    </ul>                  
+                  </div>
+                </div>              
+              </div>
+              <div class="item">
+                <div class="team-members maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="" src="images/team/sm-2.jpg">
+                  </div>
+                  <div class="bg-lighter border-1px text-center p-10 pt-20 pb-10">
+                    <h3 class="mt-0"><a class="text-theme-colored2" href="page-teachers-details.html"> Maria Vettori</a></h3>
+                    <h5 class="text-theme-color">Teacher - MBA</h5>
+                  </div>
+                  <div class="bg-theme-colored text-center pt-5">
+                    <ul class="styled-icons">
+                      <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype text-white"></i></a></li>
+                    </ul>                  
+                  </div>
+                </div>              
+              </div>
+              <div class="item">
+                <div class="team-members maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="" src="images/team/sm-3.jpg">
+                  </div>
+                  <div class="bg-lighter border-1px text-center p-10 pt-20 pb-10">
+                    <h3 class="mt-0"><a class="text-theme-colored2" href="page-teachers-details.html"> Sakib Martin</a></h3>
+                    <h5 class="text-theme-color">Teacher - MBA</h5>
+                  </div>
+                  <div class="bg-theme-colored text-center pt-5">
+                    <ul class="styled-icons">
+                      <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype text-white"></i></a></li>
+                    </ul>                  
+                  </div>
+                </div>              
+              </div>
+              <div class="item">
+                <div class="team-members maxwidth400">
+                  <div class="team-thumb">
+                    <img class="img-fullwidth" alt="" src="images/team/sm-4.jpg">
+                  </div>
+                  <div class="bg-lighter border-1px text-center p-10 pt-20 pb-10">
+                    <h3 class="mt-0"><a class="text-theme-colored2" href="page-teachers-details.html"> Maria Martin</a></h3>
+                    <h5 class="text-theme-color">Teacher - MBA</h5>
+                  </div>
+                  <div class="bg-theme-colored text-center pt-5">
+                    <ul class="styled-icons">
+                      <li><a href="#"><i class="fa fa-facebook text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                      <li><a href="#"><i class="fa fa-skype text-white"></i></a></li>
+                    </ul>                  
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Divider: Clients -->
+    <section class="clients bg-theme-colored2">
+      <div class="container pt-10 pb-0">
+        <div class="row">
+          <div class="col-md-12">
+            <!-- Section: Clients -->
+            <div class="owl-carousel-6col text-center">
+              <div class="item"> <a href="#"><img src="images/clients/w1.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w2.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w3.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w4.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w5.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w6.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w3.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w4.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w5.png" alt=""></a></div>
+              <div class="item"> <a href="#"><img src="images/clients/w6.png" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- end main-content -->
+
+  <!-- Footer -->
+  <footer id="footer" class="footer" data-bg-img="images/footer-bg.png" data-bg-color="#152029">
+    <div class="container pt-70 pb-40">
+      <div class="row">
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <img class="mt-5 mb-20" alt="" src="/images/ingles_amateur/BigCommerce Logo white Transparent Background.png">
+            <p>203, Envato Labs, Behind Alis Steet, Melbourne, Australia.</p>
+            <ul class="list-inline mt-5">
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-phone text-theme-colored2 mr-5"></i> <a class="text-gray" href="#">123-456-789</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-envelope-o text-theme-colored2 mr-5"></i> <a class="text-gray" href="#">contact@yourdomain.com</a> </li>
+              <li class="m-0 pl-10 pr-10"> <i class="fa fa-globe text-theme-colored2 mr-5"></i> <a class="text-gray" href="#">www.yourdomain.com</a> </li>
+            </ul>            
+            <ul class="styled-icons icon-sm icon-bordered icon-circled clearfix mt-10">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-vk"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title line-bottom-theme-colored-2">Useful Links</h4>
+            <ul class="angle-double-right list-border">
+              <li><a href="#">Home Page</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">FAQ</a></li>              
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title line-bottom-theme-colored-2">Top News</h4>
+            <div class="latest-posts">
+              <article class="post media-post clearfix pb-0 mb-10">
+                <a class="post-thumb" href="#"><img src="https://placehold.it/80x55" alt=""></a>
+                <div class="post-right">
+                  <h5 class="post-title mt-0 mb-5"><a href="#">PHP Learning</a></h5>
+                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                </div>
+              </article>
+              <article class="post media-post clearfix pb-0 mb-10">
+                <a class="post-thumb" href="#"><img src="https://placehold.it/80x55" alt=""></a>
+                <div class="post-right">
+                  <h5 class="post-title mt-0 mb-5"><a href="#">Web Development</a></h5>
+                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                </div>
+              </article>
+              <article class="post media-post clearfix pb-0 mb-10">
+                <a class="post-thumb" href="#"><img src="https://placehold.it/80x55" alt=""></a>
+                <div class="post-right">
+                  <h5 class="post-title mt-0 mb-5"><a href="#">Spoken English</a></h5>
+                  <p class="post-date mb-0 font-12">Mar 08, 2015</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="widget dark">
+            <h4 class="widget-title line-bottom-theme-colored-2">Opening Hours</h4>
+            <div class="opening-hours">
+              <ul class="list-border">
+                <li class="clearfix"> <span> Mon - Tues :  </span>
+                  <div class="value pull-right"> 6.00 am - 10.00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Wednes - Thurs :</span>
+                  <div class="value pull-right"> 8.00 am - 6.00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Fri : </span>
+                  <div class="value pull-right"> 3.00 pm - 8.00 pm </div>
+                </li>
+                <li class="clearfix"> <span> Sun : </span>
+                  <div class="value pull-right text-white closed"> Closed </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" data-bg-color="#2b2d3b">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="font-12 text-black-777 m-0 sm-text-center"><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12">
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Help Desk</a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+
+<!-- external javascripts -->
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- JS | jquery plugin collection for this theme -->
+<script src="js/jquery-plugin-collection.js"></script>
+<!-- JS | Custom script for all pages -->
+<script src="js/custom.js"></script>
+<script src="js/extra.js"></script>
+
+<!-- Revolution Slider 5.x SCRIPTS -->
+<script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/extra-rev-slider-new.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+       The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+
+</body>
+
+
+</html>
